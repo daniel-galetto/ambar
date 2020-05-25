@@ -1,4 +1,11 @@
+.container-fluid {
+    background-image: linear-gradient(rgb(236, 89, 236),#febd59);
+}
 
+.navartop {
+    background-image: linear-gradient(black, rgb(236, 89, 236));
+
+}
 
 
 .card-title  {
