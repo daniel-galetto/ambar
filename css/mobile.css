@@ -11,7 +11,7 @@
   .main_section{
     padding: 5%;
   }
-  .products{
+  .container-fluid{
     display: block;
     height: auto;
     padding: 5%;
@@ -27,10 +27,3 @@
   }
 }
  */
-
-@media (min-width: 576px) { 
-  
-  .custom-class {
-    display: block;
-  }
- }

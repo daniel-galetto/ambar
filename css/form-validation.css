@@ -1,0 +1,11 @@
+.container {
+  max-width: 960px;
+}
+
+.lh-condensed { line-height: 1.25; }
+
+
+body {
+  background-image: linear-gradient(rgb(236, 89, 236),#febd59);
+  color: whitesmoke;
+}
