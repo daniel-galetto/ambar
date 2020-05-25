@@ -3,7 +3,7 @@
 }
 
 .navartop {
-    background-image: linear-gradient(black, rgb(236, 89, 236));
+    background-image: linear-gradient(black, rgb(236, 89, 236), #febd59);
 
 }
 
@@ -15,4 +15,8 @@
 
 .card {
     background-color: coral;
+}
+
+.error {
+    background-image: linear-gradient(black, rgb(236, 89, 236), #febd59 );
 }
