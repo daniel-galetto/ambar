@@ -25,3 +25,8 @@
 
     background-image: linear-gradient(rgb(236, 89, 236),#febd59);
 }
+
+.img_carrusel {
+    max-width: 100%;
+
+}
