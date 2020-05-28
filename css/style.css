@@ -21,6 +21,12 @@
     background-image: linear-gradient(black, rgb(236, 89, 236), #febd59 );
 }
 
+
+.error1 {
+    background-image: linear-gradient(   rgb(236, 89, 236), #febd59 );
+}
+
+
 .dialog-inner {
 
     background-image: linear-gradient(rgb(236, 89, 236),#febd59);
