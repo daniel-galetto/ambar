@@ -49,39 +49,42 @@
     <div class="container">
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="img/logo.jpg" alt="" width="150" height="150">
-    <h2>Checkout form</h2>
-    <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+    <h2>FORMULARIO DE COMPRA</h2>
+    <p class="lead">Lea atentamente y complete el formulario para que la compra se realice sin inconvenientes.</p>
   </div>
 
   <div class="row">
     <div class="col-md-4 order-md-2 mb-4">
-      <h4 class="d-flex justify-content-between align-items-center mb-3">
-        <span class="text-muted">comentarios</span>
-      </h4>
 
-
-      <a class="navbar-brand" href="https://www.instagram.com/ambar.blanqueria.deco/?hl=es-la" target="_blank">
+      <div class="text-center">
+        
+          <h4 class="text-center">Contactenos</h4>
+        
+      <a class="navbar-brand m-3" href="https://www.instagram.com/ambar.blanqueria.deco/?hl=es-la" target="_blank">
         <img src="img/instagram.svg" width="30" height="30" class="d-inline-block align-top alt="" loading="lazy">    
       </a>
       
-      <a class="navbar-brand" href="https://www.facebook.com/ambarblanqueriadeco-111680377190472/"target="_blank">
+      <a class="navbar-brand m-3" href="https://www.facebook.com/ambarblanqueriadeco-111680377190472/"target="_blank">
           <img src="img/facebook.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
       </a>
   
-      <a class="navbar-brand text-color" href="https://api.whatsapp.com/send?phone=5493584249578"target="_blank" >
+      <a class="navbar-brand text-color m-3" href="https://api.whatsapp.com/send?phone=5493584249578"target="_blank" >
           <img src="img/whatsapp.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
       </a>
 
-      <img src="img/sabanas1.jpg" class="card-img-top" alt="...">
+    </div>
+    
 
-      <img src="img/sabanas1.jpg" class="card-img-top" alt="...">
-
-      <img src="img/sabanas1.jpg" class="card-img-top" alt="...">   
+      <img src="img/sorteo.jpg" class="card-img-top" alt="...">
+      <br>
+      <img src="img/varios.jpg" class="card-img-top" alt="...">
+      <br>
+      <img src="img/muypronto.jpg" class="card-img-top" alt="...">   
      
     </div>
 
     <div class="col-md-8 order-md-1">
-      <h4 class="mb-3">Datos Personales</h4>
+      <h2 class="mb-3">Datos Personales</h2>
       <form class="needs-validation" novalidate>
         <div class="row">
           <div class="col-md-6 mb-3">
@@ -101,7 +104,7 @@
         </div>
 
         <div class="mb-3">
-          <label for="username">Nombre de Usuario</label>
+          <label for="username">Nombre de Usuario Instagram <span class="text-muted"> (Opcional)</span></label>
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text">@</span>
@@ -114,8 +117,8 @@
         </div>
 
         <div class="mb-3">
-          <label for="email">Email <span class="text-muted">(Opcional)</span></label>
-          <input type="email" class="form-control" id="email" placeholder="nombre_apellido@ejemplo.com.ar">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="">
           <div class="invalid-feedback">
             Favor de informar una direccione de correo valida.
           </div>
@@ -123,15 +126,15 @@
 
         <div class="mb-3">
           <label for="address">Domicilio</label>
-          <input type="text" class="form-control" id="address" placeholder="San Martin 100" required>
+          <input type="text" class="form-control" id="address" placeholder="  " required>
           <div class="invalid-feedback">
             Favor de Ingresar el domicilio donde se realizara la entrega.
           </div>
         </div>
 
         <div class="mb-3">
-          <label for="address2">Direccion Opcional <span class="text-muted">(Optional)</span></label>
-          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+          <label for="address2">Direccion de envio <span class="text-muted">(Opcional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="">
         </div>
 
         <div class="row">
@@ -147,16 +150,19 @@
               Favor de elegir una Localidad
             </div>
           </div>
+
           <div class="col-md-4 mb-3">
-            <label for="state">State</label>
+            <label for="state">Provincia</label>
             <select class="custom-select d-block w-100" id="state" required>
-              <option value="">Choose...</option>
-              <option>California</option>
+              <option value="">Elegir...</option>
+              <option>Cordoba</option>
+              <option>San Luis</option>
             </select>
             <div class="invalid-feedback">
               Please provide a valid state.
             </div>
-          </div>
+          </div> 
+
           <div class="col-md-3 mb-3">
             <label for="zip">Codigo Postal</label>
             <input type="text" class="form-control" id="zip" placeholder="" required>
@@ -168,11 +174,11 @@
         <hr class="mb-4">
         <div class="custom-control custom-checkbox">
           <input type="checkbox" class="custom-control-input" id="same-address">
-          <label class="custom-control-label" for="same-address">Enviar mi pedido a la direccion indicada</label>
+          <label class="custom-control-label" for="same-address">Deseo recibir informacion de productos</label>
         </div>
         <div class="custom-control custom-checkbox">
           <input type="checkbox" class="custom-control-input" id="save-info">
-          <label class="custom-control-label" for="save-info">GUardar mi informacion para la proxima compra</label>
+          <label class="custom-control-label" for="save-info">Solicitar cupon de descuento para proxima compra</label>
         </div>
         <hr class="mb-4">
 
@@ -195,7 +201,7 @@
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="cc-name">Titular de la tarjeta</label>
-            <input type="text" class="form-control" id="cc-name" placeholder="Apellido Nombre" required>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
             <small class="text-muted">Nombre completo como figura en la tarjeta</small>
             <div class="invalid-feedback">
               Name on card is required
@@ -203,7 +209,7 @@
           </div>
           <div class="col-md-6 mb-3">
             <label for="cc-number">Numero de la Tarjeta</label>
-            <input type="text" class="form-control" id="cc-number" placeholder="1234 1234 1234 1234" required>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
             <div class="invalid-feedback">
               Favor de cargar el Numero de la tarjeta
             </div>
@@ -284,23 +290,63 @@
 
   <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
+      
       <div class="modal-content">
+
         <div class="modal-header">
           <h5 class="modal-title text-dark" id="staticBackdropLabel">Terminos y condiciones</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body text-dark">
+
+        <div class=" tyc modal-body text-dark">
           <p>Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todas los productos  que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.
           El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para la compra de alguno de nuestros productos.  no asume la responsabilidad en caso de que entregue dicha clave a terceros.
           Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la verificación del stock y disponibilidad de producto, validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico.
-          Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en las compras realizadas en este sitio web.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-success" data-dismiss="modal" >Acepto</button>
-        </div>
+          Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en las compras realizadas en este sitio web.
+          Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todas los productos  que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.
+          El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para la compra de alguno de nuestros productos.  no asume la responsabilidad en caso de que entregue dicha clave a terceros.
+          Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la verificación del stock y disponibilidad de producto, validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico.
+          Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en las compras realizadas en este sitio web.
+          Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todas los productos  que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.
+          El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para la compra de alguno de nuestros productos.  no asume la responsabilidad en caso de que entregue dicha clave a terceros.
+          Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la verificación del stock y disponibilidad de producto, validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico.
+          Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en las compras realizadas en este sitio web.
+          Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todas los productos  que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.
+          El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para la compra de alguno de nuestros productos.  no asume la responsabilidad en caso de que entregue dicha clave a terceros.
+          Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la verificación del stock y disponibilidad de producto, validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico.
+          Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en las compras realizadas en este sitio web.
+          Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todas los productos  que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.
+          El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para la compra de alguno de nuestros productos.  no asume la responsabilidad en caso de que entregue dicha clave a terceros.
+          Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la verificación del stock y disponibilidad de producto, validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico.
+          Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en las compras realizadas en este sitio web.
+          Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todas los productos  que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.
+          El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para la compra de alguno de nuestros productos.  no asume la responsabilidad en caso de que entregue dicha clave a terceros.
+          Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la verificación del stock y disponibilidad de producto, validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico.
+          Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en las compras realizadas en este sitio web.
+          Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todas los productos  que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.
+          El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para la compra de alguno de nuestros productos.  no asume la responsabilidad en caso de que entregue dicha clave a terceros.
+          Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la verificación del stock y disponibilidad de producto, validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico.
+          Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en las compras realizadas en este sitio web.
+          Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todas los productos  que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.
+          El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para la compra de alguno de nuestros productos.  no asume la responsabilidad en caso de que entregue dicha clave a terceros.
+          Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la verificación del stock y disponibilidad de producto, validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico.
+          Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en las compras realizadas en este sitio web.
+          Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todas los productos  que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.
+          El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para la compra de alguno de nuestros productos.  no asume la responsabilidad en caso de que entregue dicha clave a terceros.
+          Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la verificación del stock y disponibilidad de producto, validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico.
+          Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en las compras realizadas en este sitio web.
+          Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todas los productos  que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.
+          El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para la compra de alguno de nuestros productos.  no asume la responsabilidad en caso de que entregue dicha clave a terceros.
+          Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la verificación del stock y disponibilidad de producto, validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico.
+          Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en las compras realizadas en este sitio web.
+          </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal" >Acepto</button>
+          </div>
       </div>
     </div>
   </div>
