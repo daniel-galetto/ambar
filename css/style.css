@@ -45,6 +45,10 @@ h3 {
     font-size: 7px;
 }
 
-.p {
+.mail {
     font-size: 10px;
+}
+
+a:link {
+text-decoration:none;
 }
