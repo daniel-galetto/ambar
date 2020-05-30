@@ -16,6 +16,7 @@
 		<script src="js/modernizr.custom.js"></script>
 
 
+    <link rel="stylesheet" type="text/css" href="css/component.css" /> 
 
     <title>Ambar Blanqueria & Deco</title>
 
@@ -43,6 +44,31 @@
     <!-- Custom styles for this template -->
     <link href="css/form-validation.css" rel="stylesheet">
   </head>
+
+  <!-- comienzo del navbar -->
+
+<nav class="navbar navartop">
+  <!-- Navbar content -->
+
+  <a class="navbar-brand" href="paginaerror.html">
+      <img src="img/logo.jpg" width="100" height="75" alt="" loading="lazy">
+  </a>
+
+  <nav class="cl-effect-18 ">
+      <a href="productos.html"><span data-hover="Home">Productos</span></a>
+      <a href="index.html#ofertas"><span data-hover="Ofertas">Ofertas</span></a>
+      <a href="faq.html"><span data-hover="Chatoyant">Faqs</span></a>
+      <a href="404.html"><span data-hover="Ofertas">Consultas</span></a>
+  </nav>
+
+
+  <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Que desea buscar ?" aria-label="Search">
+      <button class="btn btn-outline-warning my-2 my-sm-0 " type="submit">Buscar</button>
+  </form>
+  
+</nav> <!-- fin del Navbar -->
+
 
   <body>
 
@@ -218,14 +244,14 @@
         <div class="row">
           <div class="col-md-3 mb-3">
             <label for="cc-expiration">Fecha de Vencimiento</label>
-            <input type="text" class="form-control" id="cc-expiration" placeholder="01/20" required>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
             <div class="invalid-feedback">
               Favor de completar fecha de vencimiento
             </div>
           </div>
           <div class="col-md-3 mb-3">
             <label for="cc-cvv">Codigo de Seguridad</label>
-            <input type="text" class="form-control" id="cc-cvv" placeholder="123" required>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
             <div class="invalid-feedback">
               Favor de informar Codigo de seguriadad
             </div>
