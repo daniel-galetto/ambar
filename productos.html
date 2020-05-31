@@ -1,250 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!-- ESTE LINK HACE QUE SE PONGA EL LOGO EN LA PESTAÑA DE LA PAGINA -->
     <link rel="icon" type="image/x-icon" href="img/logo.jpg"/>
-    
+    <!-- HOJA DE ESTILOS DE BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-
-
+    <!-- HOJA DE ESTILO PROPIA -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-
-
-    <link href="css/carousel.css" rel="stylesheet">
-
+    <!-- HOJA DE ESTILO PARA EL MENU -->
     <link rel="stylesheet" type="text/css" href="css/component.css" /> 
-
+    <!-- HACE QUE FUNCIONE EL MODAL JQUERY JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- HACE QUE FUNCIONE EL JS DE BOOTSTRAP -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>  <!-- ETIQUETA CON EL NOMBRE DE LA PAGINA EN LA PESTAÑA -->
     <title>Ambar Blanqueria & Deco</title>
-</head>
 
-<body class="error">
+  </head>
 
-<!-- comienzo del navbar -->
+  <body class="error1">
 
-<nav class="navbar navartop">
-    <!-- Navbar content -->
+    <nav class="navbar navartop"> <!--COMIENZO DEL NAVBAR -->
 
-    <a class="navbar-brand" href="#">
-        <img src="img/logo.jpg" width="100" height="75" alt="" loading="lazy">
-    </a>
+      <!-- CONTENIDO DEL NAVBAR -->
 
-    <nav class="cl-effect-18 ">
-        <a href="index.html"><span data-hover="Home">Home</span></a>
-        <a href="index.html#ofertas"><span data-hover="Ofertas">Ofertas</span></a>
-        <a href="faq.html"><span data-hover="Chatoyant">Faqs</span></a>
-        <a href="404.html"><span data-hover="Ofertas">Consultas</span></a>
-    </nav>
+      <a class="navbar-brand" href="paginaerror.html"> <img src="img/logo.jpg" width="100" height="75" alt="" loading="lazy"></a>
+
+      <nav class="cl-effect-18"> <!-- HACE QUE CADA BOTON SE HAGA UNA X -->
+          <a href="index.html"><span data-hover="Home">Home</span></a>
+          <a href="index.html#ofertas"><span data-hover="Ofertas">Ofertas</span></a>
+          <a href="faq.html"><span data-hover="Faqs">Faqs</span></a>
+          <a href="404.html"><span data-hover="Ofertas">Consultas</span></a>
+      </nav>
+
+      <form class="form-inline"> <!-- BOTON DE BUSQUEDA BOOTSTRAP -->
+          <input class="form-control mr-sm-2" type="search" placeholder="Que desea buscar ?" aria-label="Search">
+          <button class="btn btn-outline-warning my-2 my-sm-0 " type="submit">Buscar</button>
+      </form>
+
+    </nav> <!-- FIN DEL NAVBAR -->    
 
 
 
-    <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Que desea buscar ?" aria-label="Search">
-        <button class="btn btn-outline-warning my-2 my-sm-0 " type="submit">Buscar</button>
-    </form>
-    
-</nav> <!-- fin del Navbar -->
+    <main role="main">
 
-<main role="main">
-
-<div class="py-5">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img src="img/sabanas.jpg" width="100%" height="225">    
-             <div class="card-body">
-            <p class="card-text">Sábanas Disney tsum tsum 1 plaza y media.140 hilos</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="badge badge-pill badge-warning m-3">$ 1.500.-</span> 
-              </div>
-              <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="py-5">
+      <div class="container">
       
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img src="img/productos1.jpg" width="100%" height="225">    
-             <div class="card-body">
-            <p class="card-text">Son hermosos!! Úsalos como maceta, mate o porta lápices.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="badge badge-pill badge-warning m-3">$ 310.-</span> 
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="img/sabanas.jpg" width="100%" height="225">    
+                 <div class="card-body">
+                <p class="card-text">Sábanas Disney tsum tsum 1 plaza y media.140 hilos</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <span class="badge badge-pill badge-warning m-3">$ 1.500.-</span> 
+                  </div>
+                  <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+                </div>
               </div>
-              <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="img/productos1.jpg" width="100%" height="225">    
+                 <div class="card-body">
+                <p class="card-text">Son hermosos!! Úsalos como maceta, mate o porta lápices.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <span class="badge badge-pill badge-warning m-3">$ 310.-</span> 
+                  </div>
+                  <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="img/productos4.jpg" width="100%" height="225">    
+                 <div class="card-body">
+                <p class="card-text"> Pijamas para  Adultos y niños. Modelos: Stitch, Minnie y Mickey.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <span class="badge badge-pill badge-warning m-3">$ 3.990.-</span> 
+                  </div>
+                  <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="img/productos2.jpg" width="100%" height="225">    
+                 <div class="card-body">
+                <p class="card-text">Bellos almohadones línea Disney Baby</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <span class="badge badge-pill badge-warning m-3">$ 790.-</span> 
+                  </div>
+                  <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="img/sabanasinfa.jpg" width="100%" height="225">    
+                 <div class="card-body">
+                <p class="card-text">Sábanas infantiles 1 plaza.Varios diseños.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <span class="badge badge-pill badge-warning m-3">$ 1.450.-</span> 
+                  </div>
+                  <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="img/sabanasofertas.jpg" width="100%" height="225">    
+                 <div class="card-body">
+                <p class="card-text">Sábanas 2 plazas.140 hilos.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <span class="badge badge-pill badge-warning m-3">$ 1.700.-</span> 
+                  </div>
+                  <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="img/mantelitos.jpg" width="100%" height="225">    
+                 <div class="card-body">
+                <p class="card-text">Mantelitos materos de excelente calidad.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <span class="badge badge-pill badge-warning m-3">$ 299.-</span> 
+                  </div>
+                  <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="img/almahoadonesch.png" width="100%" height="225">    
+                 <div class="card-body">
+                <p class="card-text">Almohadones varios diseños y tamaños.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <span class="badge badge-pill badge-warning m-3">$ 800.-</span> 
+                  </div>
+                  <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="img/sabanas1.jpg" width="100%" height="225">    
+                 <div class="card-body">
+                <p class="card-text">Sabanas 1 / 2. Primera Calidad.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <span class="badge badge-pill badge-warning m-3">$ 1.300.-</span> 
+                  </div>
+                  <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="img/frazada.jpg" width="100%" height="225">    
+                 <div class="card-body">
+                <p class="card-text">Frazadas estampadas de polar</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <span class="badge badge-pill badge-warning m-3">$ 3.800.-</span> 
+                  </div>
+                  <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="img/toallonminie.jpg" width="100%" height="225">    
+                 <div class="card-body">
+                <p class="card-text">Combo - Toallon Minnie 60 x 120 y mantita</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <span class="badge badge-pill badge-warning m-3">$ 1.600.-</span> 
+                  </div>
+                  <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="img/mate.jpg" width="100%" height="225">    
+                 <div class="card-body">
+                <p class="card-text">Mates ecologicos.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <span class="badge badge-pill badge-warning m-3">$ 300.-</span> 
+                  </div>
+                  <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img src="img/productos4.jpg" width="100%" height="225">    
-             <div class="card-body">
-            <p class="card-text"> Pijamas para  Adultos y niños. Modelos: Stitch, Minnie y Mickey.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="badge badge-pill badge-warning m-3">$ 3.990.-</span> 
-              </div>
-              <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img src="img/productos2.jpg" width="100%" height="225">    
-             <div class="card-body">
-            <p class="card-text">Bellos almohadones línea Disney Baby</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="badge badge-pill badge-warning m-3">$ 790.-</span> 
-              </div>
-              <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img src="img/sabanasinfa.jpg" width="100%" height="225">    
-             <div class="card-body">
-            <p class="card-text">Sábanas infantiles 1 plaza.Varios diseños.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="badge badge-pill badge-warning m-3">$ 1.450.-</span> 
-              </div>
-              <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img src="img/sabanasofertas.jpg" width="100%" height="225">    
-             <div class="card-body">
-            <p class="card-text">Sábanas 2 plazas.140 hilos.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="badge badge-pill badge-warning m-3">$ 1.700.-</span> 
-              </div>
-              <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img src="img/mantelitos.jpg" width="100%" height="225">    
-             <div class="card-body">
-            <p class="card-text">Mantelitos materos de excelente calidad.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="badge badge-pill badge-warning m-3">$ 299.-</span> 
-              </div>
-              <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img src="img/almahoadonesch.png" width="100%" height="225">    
-             <div class="card-body">
-            <p class="card-text">Almohadones varios diseños y tamaños.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="badge badge-pill badge-warning m-3">$ 800.-</span> 
-              </div>
-              <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img src="img/sabanas1.jpg" width="100%" height="225">    
-             <div class="card-body">
-            <p class="card-text">Sabanas 1 / 2. Primera Calidad.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="badge badge-pill badge-warning m-3">$ 1.300.-</span> 
-              </div>
-              <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
-            </div>
-          </div>
-        </div>
-      </div>
+    </main>
 
 
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img src="img/frazada.jpg" width="100%" height="225">    
-             <div class="card-body">
-            <p class="card-text">Frazadas estampadas de polar</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="badge badge-pill badge-warning m-3">$ 3.800.-</span> 
-              </div>
-              <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img src="img/toallonminie.jpg" width="100%" height="225">    
-             <div class="card-body">
-            <p class="card-text">Combo - Toallon Minnie 60 x 120 y mantita</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="badge badge-pill badge-warning m-3">$ 1.600.-</span> 
-              </div>
-              <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <img src="img/mate.jpg" width="100%" height="225">    
-             <div class="card-body">
-            <p class="card-text">Mates ecologicos.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="badge badge-pill badge-warning m-3">$ 300.-</span> 
-              </div>
-              <a href="venta.html" class="btn btn-warning btn-lg btn-block text-light" >COMPRAR</a>   
-            </div>
-          </div>
-        </div>
-      </div>
-
-  </div>
-</div>
-
-</main>
-
-
-<!-- comienzo del main -->
 
       
     <!-- comienzo del footer -->
@@ -339,7 +330,7 @@
         </nav>
         </div>
     </div>
-</footer>  <!-- fin del footer -->
+    </footer>  <!-- fin del footer -->
 
-</body>
+    </body>
 </html>
